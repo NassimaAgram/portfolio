@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+Static Next.js portfolio · EN + FR · content in JSON/MDX · 3D with React Three Fiber · hosted on Vercel.
+Progress checklist: [PLAN.md](PLAN.md)
 
-First, run the development server:
+## Commands
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev     # dev server → http://localhost:3000
+npm run build   # production build (static export)
+npm run lint    # check code
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Libraries
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Framework
+| Library | Version | Purpose |
+|---|---|---|
+| `next` | 15.5 | Framework: pages, routing, build |
+| `react` / `react-dom` | 19.1 | UI library |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Features
+| Library | Version | Purpose |
+|---|---|---|
+| `next-intl` | 4.14 | EN/FR translations and `/en`, `/fr` routes |
+| `next-themes` | 0.4 | Dark/light mode |
+| `framer-motion` | 14.0 | Scroll and hover animations |
+| `next-mdx-remote` | 6.0 | Blog posts and project case studies in MDX |
 
-## Learn More
+### 3D
+| Library | Version | Purpose |
+|---|---|---|
+| `three` | 0.186 | 3D engine (WebGL) |
+| `@react-three/fiber` | 9.8 | Write three.js scenes as React components |
+| `@react-three/drei` | 10.7 | Ready-made 3D helpers: controls, text, model loading, effects |
 
-To learn more about Next.js, take a look at the following resources:
+### Dev only
+| Library | Purpose |
+|---|---|
+| `tailwindcss` 4, `@tailwindcss/postcss` | Styling |
+| `typescript`, `@types/*` | Type checking |
+| `eslint`, `eslint-config-next` | Linting |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit the JSON files in `data/` (profile, projects, experience, skills, socials) and the MDX files in `content/`, then push. Vercel redeploys automatically.
