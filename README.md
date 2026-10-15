@@ -16,15 +16,15 @@ npm run lint    # check code
 ### Framework
 | Library | Version | Purpose |
 |---|---|---|
-| `next` | 15.5 | Framework: pages, routing, build |
-| `react` / `react-dom` | 19.1 | UI library |
+| `next` | 16.4 | Framework: pages, routing, build |
+| `react` / `react-dom` | 19.3 | UI library |
 
 ### Features
 | Library | Version | Purpose |
 |---|---|---|
 | `next-intl` | 4.14 | EN/FR translations and `/en`, `/fr` routes |
 | `next-themes` | 0.4 | Dark/light mode |
-| `framer-motion` | 14.0 | Scroll and hover animations |
+| `framer-motion` | 14.3 | Scroll and hover animations |
 | `next-mdx-remote` | 6.0 | Blog posts and project case studies in MDX |
 
 ### 3D
